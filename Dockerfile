@@ -7,3 +7,4 @@ RUN go build
 RUN ln -s /go/src/app/app /bin/dockerswitch
 
 VOLUME /data
+WORKDIR /data
