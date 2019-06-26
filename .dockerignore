@@ -2,3 +2,5 @@
 Dockerfile
 build
 dockerswitch
+state
+config.toml
