@@ -72,7 +72,7 @@ func main() {
 		container_switches[i].monitor(docker_cli)
 	}
 	bridge := accessory.NewBridge(accessory.Info{Name: "Docker Switch Bridge"}).Accessory
-	transport, err := hc.NewIPTransport(hc.Config{Pin: "18927133"}, bridge, accessories...)
+	transport, err := hc.NewIPTransport(hc.Config{Pin: "18927133", StoragePath: "state"}, bridge, accessories...)
 	if err != nil {
 		log.Panic(err)
 	}
